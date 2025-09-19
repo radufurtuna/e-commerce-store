@@ -31,7 +31,7 @@ const MobileFilters: React.FC<MobileFiltersProps> = ({
 
        <Dialog open={open} as="div" className="relative z-40 lg:hidden" onClose={onClose}>
         {/* Background */}
-        <div className="fixed inset-0 "/>
+        <div className="fixed inset-0 bg-gray-500/20"/>
 
         {/* Dialog position */}
          <div className="fixed inset-0 z-40 flex">
