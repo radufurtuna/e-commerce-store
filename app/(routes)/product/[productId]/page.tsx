@@ -7,9 +7,9 @@ import Info from "@/components/info";
 
 
 interface ProductPageProps {
-    params: {
+    params: Promise<{
         productId: string;
-    };
+    }>;
 }
 
 const ProductPage: React.FC<ProductPageProps> = async ({ 

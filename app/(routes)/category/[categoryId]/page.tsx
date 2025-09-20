@@ -14,13 +14,13 @@ import Filter from "./components/filter";
 export const revalidate = 0;
 
 interface CategoryPageProps {
-    params: {
+    params: Promise<{
         categoryId: string;
-    };
-    searchParams: {
+    }>;
+    searchParams: Promise<{
         colorId?: string;
         sizeId?: string;
-    }
+    }>
 }
 
 const CategoryPage: React.FC<CategoryPageProps> = async ({
